@@ -1,0 +1,52 @@
+GEM
+  remote: http://production.cf.rubygems.org/
+  specs:
+    activesupport (4.1.1)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    advanced_hash_keys (1.0.0)
+      activesupport
+      rake
+    diff-lcs (1.2.5)
+    happymapper (0.4.1)
+      libxml-ruby (~> 2.0)
+    i18n (0.6.9)
+    json (1.8.1)
+    libxml-ruby (2.7.0)
+    logger-colors (1.0.0)
+    mini_portile (0.6.0)
+    minitest (5.3.4)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
+    rake (10.3.2)
+    rspec (3.0.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
+    rspec-core (3.0.0)
+      rspec-support (~> 3.0.0)
+    rspec-expectations (3.0.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.0.0)
+    rspec-mocks (3.0.1)
+      rspec-support (~> 3.0.0)
+    rspec-support (3.0.0)
+    thread_safe (0.3.4)
+    tzinfo (1.2.1)
+      thread_safe (~> 0.1)
+    unindent (1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  advanced_hash_keys
+  happymapper
+  logger-colors
+  nokogiri
+  rspec
+  unindent

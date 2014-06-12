@@ -1,0 +1,87 @@
+# This file overrides https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+
+AllCops:
+  Includes:
+    - Rakefile
+  Excludes:
+    - vendor/**
+    - log/**
+    - tmp/**
+
+# Limit lines to 80 characters.
+LineLength:
+  Enabled: false
+
+# Avoid methods longer than 10 lines of code
+MethodLength:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
+# Favor modifier if/unless usage when you have a single-line body.
+IfUnlessModifier:
+  Enabled: false
+
+# Favor modifier while/until usage when you have a single-line body.
+WhileUntilModifier:
+  Enabled: false
+
+# Preferred collection methods.
+CollectionMethods:
+  Enabled: false
+
+# Don't interpolate global, instance and class variables directly in strings.
+VariableInterpolation:
+  Enabled: false
+
+# Use only ascii symbols in comments.
+AsciiComments:
+  Enabled: false
+
+CaseEquality:
+  Description: 'Avoid explicit use of the case equality operator(===).'
+  Enabled: false
+
+SignalException:
+  Description: 'Checks for proper usage of fail and raise.'
+  Enabled: false
+
+SymbolArray:
+  Description: 'Use %i or %I for arrays of symbols.'
+  Enabled: true
+
+CyclomaticComplexity:
+  Max: 20
+
+Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+TrivialAccessors:
+  Enabled: false
+
+AccessModifierIndentation:
+  Enabled: false
+
+PerlBackrefs:
+  Enabled: false
+
+SingleLineBlockParams:
+  Description: 'Enforces the names of some block params.'
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+FileName:
+  Enabled: false
+
+RegexpLiteral:
+  Enabled: false
+
+AlignArray:
+  Enabled: false
+
+AccessorMethodName:
+  Enabled: false

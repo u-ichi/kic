@@ -1,0 +1,37 @@
+#! /usr/bin/env ruby
+
+$LOAD_PATH << File.join(File.dirname(__FILE__), '../lib')
+require 'kic'
+require 'advanced_hash_keys'
+require 'logger/colors'
+require 'optparse'
+require 'yaml'
+
+def main
+  opt = OptionParser.new
+
+  opt.on('-c ') {|filename| config_file = filename }
+  opt.permute!(ARGV)
+
+  config_file = config_file || 'config.yml'
+
+  config = YAML.load_file(config_file).symbolize_keys(true)
+  config.merge!(logger: Logger.new(STDOUT))
+
+
+  kic = Kic.new(config)
+
+  query_param = {}
+  ARGV.each do |str|
+    key, value  = str.split('=')
+    query_param[key.to_sym] = value
+  end
+
+  kic.exec(query_param)
+
+  puts "response code: #{kic.response_code}"
+  puts ''
+  puts kic.response
+end
+
+main

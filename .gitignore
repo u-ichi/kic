@@ -1,0 +1,33 @@
+# For Mac
+.DS_Store
+
+
+# vim backup file
+*.swp
+
+
+# ci
+coverage
+spec/reports
+
+
+# Intellij / Rubymine
+.idea/*
+
+
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+
+# gem
+/pkg
+
+
+# config
+config.yml
