@@ -1,0 +1,46 @@
+# For Mac
+.DS_Store
+
+
+# vim backup file
+*.swp
+
+
+# ci
+coverage
+spec/reports
+
+
+# Rubymine
+.idea/*
+
+
+# Ignore local config
+config/database.yml
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+
+# Auto-generate SQL File
+/db/structure.sql
+
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# E-R Diagram
+erd.pdf
+erd.dot
+
